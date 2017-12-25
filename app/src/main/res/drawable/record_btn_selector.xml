@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="150" android:exitFadeDuration="150">
+<!-- When selected -->
+<item android:state_pressed="true" android:drawable="@drawable/red_gradient_background"/>
+<item android:state_activated="true" android:drawable="@drawable/red_gradient_background"/>
+<item android:state_selected="true" android:drawable="@drawable/red_gradient_background"/>
+<item android:state_focused="true" android:drawable="@drawable/red_gradient_background"/>
+
+<!-- When not selected -->
+<item android:drawable="@drawable/blue_gradient_background"/>
+</selector>

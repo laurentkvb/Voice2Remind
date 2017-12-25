@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/default_background_color</item>
+        <item name="colorPrimaryDark">@color/default_background_color</item>
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorAccent">@color/default_background_color</item>+
+        <item name="colorControlHighlight">@color/black</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/blue_text_color</item>
+        <item name="colorControlHighlight">@color/blue_text_color</item>
+    </style>ç
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="DefaultDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="colorPrimary">#00397F</item>
+        <item name="colorAccent">#0AAEEF</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_fadein</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fadeout</item>
+    </style>
+
+
+
+</resources>

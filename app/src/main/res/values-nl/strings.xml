@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="months_written_array">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maart</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+    <string name="date_text">Datum</string>
+    <string name="reminder_text">Herinnering</string>
+    <string name="help_text">Druk op de opnameknop om je herinnering in te spreken</string>
+    <string name="how_to_say_text"><![CDATA[Je kunt een herinnering opslaan voor een bepaalde dag door het in
+    de volgende formaat te zeggen:
+
+
+    \n\n<dag> <maand> <herinnering tekst>
+    \n\n"5 mei Ik moet de hond ophalen"
+    \n\nJe kan ook alleen je herinnering zeggen en dan de gewenste tijdstip instellen.
+    \n\nNadat de tijd is ingesteld, zal de herinnnering worden getoond in de vorm van een notificatie op de ingestelde tijdstip.]]></string>
+
+    <string name="how_to_say_text_title">Hoe werkt het?</string>
+    <string name="how_to_say_text_p1">Je kunt een herinnering opslaan voor een bepaalde dag door het in de volgende formaat te zeggen:\n</string>
+    <string name="how_to_say_text_p2"><![CDATA[<dag> <maand> <herinnering tekst>\n]]></string>
+    <string name="how_to_say_text_p3"><![CDATA["5 mei Ik moet de hond ophalen"\n]]></string>
+    <string name="how_to_say_text_p4"><![CDATA[Je kan ook je herinnering zeggen en dan de gewenste tijdstip instellen in de popup die erna volgt.\n]]></string>
+    <string name="how_to_say_text_p5"><![CDATA[Nadat de tijd is ingesteld, zal de herinnering worden getoond in de vorm van een notificatie op de ingestelde tijdstip.\n]]></string>
+
+
+    <string name="btn_setreminder">Sla herinnering op</string>
+    <string name="btn_edit">Bewerk</string>
+    <string name="confirm_message_reminder">Herinnering opgeslagen voor %1$s</string>
+
+
+    <string name="say_something_text"><![CDATA[ Zeg iets...]]></string>
+    <string name="snackbar_no_words_detected_text">Geen woorden gevonden</string>
+    <string name="reminder_placed_message">Herinnering gezet voor</string>
+    <string name="reminder_edit_text">Herinnering\nbewerken</string>
+    <string name="cancel">Annuleren</string>
+    <string name="today">Vandaag</string>
+
+    <!--For calculating time from text-->
+    <string name="at_time_unit">om</string>
+    <string name="over_time_unit">over</string>
+    <string name="hour">uur</string>
+    <string name="minute">minuten</string>
+    <string name="second_1">secondes</string>
+    <string name="second_2">seconden</string>
+
+    <string name="reminder_trigger_title">Ter herinnering</string>
+    <string name="how_to_say_text_or">Of..</string>
+    <string name="reminder_deleted">Herinnering verwijderd</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    android:enterFadeDuration="150" android:exitFadeDuration="150"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- When selected -->
+<item android:state_pressed="true" android:drawable="@drawable/ic_apps_black_24dp"/>
+<item android:state_activated="true" android:drawable="@drawable/ic_apps_black_24dp"/>
+<item android:state_selected="true" android:drawable="@drawable/ic_apps_black_24dp"/>
+<item android:state_focused="true" android:drawable="@drawable/ic_apps_black_24dp"/>
+
+<!-- When not selected -->
+<item android:drawable="@drawable/ic_apps_white_24dp"/>
+</selector>

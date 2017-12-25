@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="months_written_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="date_text">Date</string>
+    <string name="reminder_text">Reminder</string>
+    <string name="help_text">Press the record button to set your reminder</string>
+    <string name="how_to_say_text"><![CDATA[To save a reminder, say it in the following format:
+\n\n
+• <day> of <month> <reminder text>\n
+• <day> of <month> <hour> <reminder text>\n
+
+\n
+For example
+\n
+• 6th of june 5 o\'clock I have to do groceries]]></string>
+    <string name="btn_setreminder">Set reminder</string>
+    <string name="btn_edit">Edit</string>
+
+    <string name="say_something_text">Say something...</string>
+    <string name="snackbar_no_words_detected_text">No words detected</string>
+    <string name="reminder_placed_message"><![CDATA[Reminder set for ...]]> </string>
+    <string name="reminder_edit_text">Edit\nReminder</string>
+    <string name="cancel">Cancel</string>
+    <string name="today">Today</string>
+
+    <string name="at_time_unit" >at</string>
+    <string name="over_time_unit" >over</string>
+    <string name="hour" >hours</string>
+    <string name="minute" >minuts</string>
+    <string name="second_1" >seconds</string>
+    <string name="second_2" >seconds</string>
+    <string name="reminder_trigger_title">As a reminder</string>
+    <string name="confirm_message_reminder">Reminder saved for %1$s</string>
+
+    <!--Help view text-->
+    <string name="how_to_say_text_title">How does it work?</string>
+    <string name="how_to_say_text_p1">To save a reminder, press the microphone button and say a sentence it in the following format:\n</string>
+    <string name="how_to_say_text_p2"><![CDATA[<day> of <month> <reminder text>\n]]></string>
+    <string name="how_to_say_text_p3"><![CDATA["6th of june 5 o\'clock I have to do groceries"\n]]></string>
+    <string name="how_to_say_text_p4"><![CDATA[You can also say your reminder and set the reminder time in the popup that follows.\n]]></string>
+    <string name="how_to_say_text_p5"><![CDATA[After the time is set t he reminder will be shown as a notification on the time that was set in the popup.\n]]></string>
+
+    <string name="how_to_say_text_or">Or..</string>
+    <string name="reminder_deleted">Reminder deleted</string>
+
+</resources>

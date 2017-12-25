@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nl.lkvb.voice2remind">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <permission
+        android:name="com.example.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="com.example.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Voice2RemindApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.SpeechActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <!--            <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".activities.ReminderListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" />
+
+        <receiver
+            android:name=".services.NotificationReceiver"
+            android:process=":remote" />
+
+        <receiver android:name=".services.ReminderStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.ReminderStarterService"
+            android:exported="false"></service>
+
+
+    </application>
+
+</manifest>

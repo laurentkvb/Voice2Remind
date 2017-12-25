@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="4dp"
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/popup_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/ic_close_white_24dp" />
+
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/reminder_text"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/soep"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/soep"
+        android:layout_alignStart="@+id/soep"
+        android:layout_below="@+id/soep"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/reminder_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_black_stroke_grey_bg"
+            android:gravity="center_vertical"
+            android:shadowColor="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/reminder_hourminute_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_black_stroke_grey_bg"
+            android:gravity="center_vertical"
+            android:shadowColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/reminder_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_black_stroke_grey_bg"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:textColor="@android:color/secondary_text_light"
+            android:shadowColor="@color/white"
+            android:text=""
+            android:textAlignment="center"
+            android:textColorHighlight="@color/default_background_color"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

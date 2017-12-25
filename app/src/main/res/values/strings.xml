@@ -1,0 +1,24 @@
+<resources>
+    <string-array name="months_written_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string name="app_name">Voice2Reminder</string>
+    <string name="date_text">Date</string>
+    <string name="reminder_text">Reminder</string>
+    <string name="how_to_say_text"><![CDATA[To save a reminder, say it in the following format:\n\n•<day> <month> <reminder text>\n\nFor examplevalues-nl: 5 may I have to order pancakes]]></string>
+    <string name="reminder_trigger_title">As a reminder</string>
+
+</resources>

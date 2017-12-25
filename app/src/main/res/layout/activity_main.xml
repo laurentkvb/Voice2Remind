@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_blue"
+    android:fitsSystemWindows="false"
+    tools:context="nl.lkvb.voice2remind.activities.SpeechActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+   <ImageView
+       android:layout_gravity="bottom"
+       android:id="@+id/switch_view_btn"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:clickable="true"
+       android:src="@drawable/switch_view_btn_selector"/>
+
+    <FrameLayout
+        android:id="@+id/contents_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:foregroundGravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/say_something_text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <net.gotev.speech.ui.SpeechProgressView
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/explanation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_error_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:text="@string/help_text"
+
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--date text-->
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="@string/date_text"
+                android:textColor="@color/blue_text_color"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <!--seperator-->
+            <RelativeLayout
+                android:id="@+id/seperator"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/editText1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.01"
+                android:background="@color/white" />
+
+            <!--reminder text-->
+            <TextSwitcher
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="@string/reminder_text"
+                android:textColor="#33b5e5"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/record_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/record_btn_selector"
+                    android:clickable="true"
+                    android:src="@drawable/ic_mic_white_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>
