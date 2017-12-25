@@ -1,6 +1,6 @@
 # Voice2Remind
 
-This is android project is 
+This is android project shows how voice speech gets converted to a push notification reminder.
 
 ## Getting Started
 
@@ -11,23 +11,23 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+------
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+------
 
 ```
-Give the example
+------
 ```
 
 And repeat
 
 ```
-until finished
+
+------
+
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
